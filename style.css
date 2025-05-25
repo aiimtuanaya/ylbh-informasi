@@ -263,3 +263,17 @@ footer {
 body.portofolio-page {
   background-color: #f2f2f2;
 }
+
+.btn-outline-dark {
+  border: 2px solid #212529;
+  color: #212529;
+  transition: all 0.3s ease;
+  padding: 0.5em 1.2em;
+  font-weight: 500;
+  border-radius: 0.3em;
+}
+
+.btn-outline-dark:hover {
+  background-color: #212529;
+  color: #fff;
+}
