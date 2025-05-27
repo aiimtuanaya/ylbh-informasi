@@ -1,381 +1,598 @@
 <!DOCTYPE html>
 <html lang="id">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tim & Jobdesk Pengurus YLBH</title>
-    <link rel="icon" href="aset/favicon.png" type="image/png" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-    <style>
-      .accordion-button::before {
-        font-family: 'Bootstrap Icons';
-        content: "\f4fe";
-        margin-right: 0.75rem;
-        font-size: 1.2rem;
-        color: #0d6efd;
-      }
-      .accordion-item:nth-child(even) .accordion-button {
-        background-color: #f8f9fa;
-      }
-      .accordion-item:nth-child(odd) .accordion-button {
-        background-color: #e9ecef;
-      }
-      .accordion-body {
-        animation: fadeIn 0.5s ease-in-out;
-      }
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-          transform: translateY(10px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-    </style>
-    
-</head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Tim &amp; Jobdesk Pengurus YLBH</title>
+    <link href="aset/favicon.png" rel="icon" type="image/png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top"
+    >
       <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="index.html">
-          <img src="aset/logoylbh.png" alt="Logo YLBH" class="me-2" style="height: 30px" /> YLBH
+          <img
+            alt="Logo YLBH"
+            class="me-2"
+            src="aset/logoylbh.png"
+            style="height: 30px"
+          />
+          YLBH
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
+        <button
+          class="navbar-toggler"
+          data-bs-target="#navbarNav"
+          data-bs-toggle="collapse"
+          type="button"
+        >
+          <span class="navbar-toggler-icon"> </span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html#profil">Profil</a></li>
-            <li class="nav-item"><a class="nav-link active" href="tim.html">Tim Kami</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#profil"> Profil </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html#profil"> Tim Kami </a>
+            </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Layanan</a>
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+              >
+                Layanan
+              </a>
               <ul class="dropdown-menu dropdown-menu-dark shadow">
-                <li><a class="dropdown-item" href="pidana.html">Hukum Pidana</a></li>
-                <li><a class="dropdown-item" href="perdata.html">Hukum Perdata</a></li>
-                <li><a class="dropdown-item" href="bisnis.html">Konsultasi Bisnis</a></li>
+                <li>
+                  <a class="dropdown-item" href="pidana.html"> Hukum Pidana </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="perdata.html">
+                    Hukum Perdata
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="bisnis.html">
+                    Konsultasi Bisnis
+                  </a>
+                </li>
               </ul>
             </li>
-            <li class="nav-item"><a class="nav-link" href="index.html#portofolio">Portofolio</a></li>
-            <li class="nav-item"><a class="nav-link" href="index.html#kontak">Hubungi Kami</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#portofolio"> Portofolio </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#kontak"> Hubungi Kami </a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
-
     <section class="team-section">
       <h1 class="team-title">Tim Pengacara YLBH</h1>
       <div class="team-grid">
         <div class="member-card">
-          <img src="aset/rahmatsandi.jpg" alt="Rahmat Sandi" class="member-photo" />
+          <img
+            alt="Rahmat Sandi"
+            class="member-photo"
+            src="aset/rahmatsandi.jpg"
+          />
           <div class="member-info">
             <div class="member-name">Adv. Rahmat Sandi Tatisina, S.H</div>
-            <div class="member-role">Koordinator YLBH Cabang Seram Bagian Barat</div>
+            <div class="member-role">
+              Koordinator YLBH Cabang Seram Bagian Barat
+            </div>
           </div>
         </div>
         <div class="member-card">
-          <img src="aset/raismahu.jpg" alt="Rais Mahu" class="member-photo" />
+          <img alt="Rais Mahu" class="member-photo" src="aset/raismahu.jpg" />
           <div class="member-info">
             <div class="member-name">Adv. Rais Mahu, SH</div>
-            <div class="member-role">Paralegal & Direktur Seram Post</div>
+            <div class="member-role">Paralegal &amp; Direktur Seram Post</div>
           </div>
         </div>
         <div class="member-card">
-          <img src="aset/alimin.jpg" alt="Alimin Maruapey" class="member-photo" />
+          <img
+            alt="Alimin Maruapey"
+            class="member-photo"
+            src="aset/alimin.jpg"
+          />
           <div class="member-info">
             <div class="member-name">Adv. Alimin Maruapey, SH</div>
             <div class="member-role">Bendahara Umum YLBH</div>
           </div>
         </div>
         <div class="member-card">
-          <img src="aset/fotopengacara.jpg" alt="Farah Utami" class="member-photo" />
+          <img
+            alt="Farah Utami"
+            class="member-photo"
+            src="aset/fotopengacara.jpg"
+          />
           <div class="member-info">
             <div class="member-name">Adv. Farah Utami, SH., LLM</div>
             <div class="member-role">Pakar Hukum HAM Internasional</div>
           </div>
         </div>
         <div class="member-card">
-          <img src="aset/fotopengacara.jpg" alt="Budi Hartono" class="member-photo" />
+          <img
+            alt="Budi Hartono"
+            class="member-photo"
+            src="aset/fotopengacara.jpg"
+          />
           <div class="member-info">
             <div class="member-name">Adv. Budi Hartono, SH</div>
-            <div class="member-role">Spesialis Lingkungan & Tata Ruang</div>
+            <div class="member-role">Spesialis Lingkungan &amp; Tata Ruang</div>
           </div>
         </div>
         <div class="member-card">
-          <img src="aset/fotopengacara.jpg" alt="Lestari Anindita" class="member-photo" />
+          <img
+            alt="Lestari Anindita"
+            class="member-photo"
+            src="aset/fotopengacara.jpg"
+          />
           <div class="member-info">
             <div class="member-name">Adv. Lestari Anindita, SH., M.Kn</div>
-            <div class="member-role">Konsultan Pertanahan & Notaris</div>
-          </div>
-        </div>
-      </section>
-
-    <section class="container py-5">
-      <h2 class="text-center fw-bold mb-4">Struktur & Jobdesk Pengurus</h2>
-      <div class="accordion" id="accordionJobdesk">
-
-        <!-- 1. Pembina -->
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingPembina">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePembina" aria-expanded="true" aria-controls="collapsePembina">
-        Pembina - Malik Raudhi Tuasamu
-      </button>
-    </h2>
-    <div id="collapsePembina" class="accordion-collapse collapse show" aria-labelledby="headingPembina" data-bs-parent="#accordionJobdesk">
-      <div class="accordion-body">
-        <div class="row align-items-center">
-          <div class="col-md-8">
-            <ul>
-              <li>Memberikan nasihat strategis pengembangan lembaga</li>
-              <li>Menilai laporan kinerja dan arah organisasi</li>
-              <li>Persetujuan kebijakan strategis</li>
-              <li>Pengawasan kinerja, keuangan, dan etika organisasi</li>
-              <li>Mewakili lembaga dalam forum kehormatan atau kebijakan tinggi</li>
-            </ul>
-          </div>
-          <div class="col-md-4 text-center">
-            <img src="aset/foto-maliktuasamu.jpg" alt="Malik Raudhi Tuasamu" class="img-fluid rounded" style="max-width: 150px;" />
+            <div class="member-role">Konsultan Pertanahan &amp; Notaris</div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-
-  <!-- 2. Direktur & Managing Partner -->
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingDirektur">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDirektur" aria-expanded="false" aria-controls="collapseDirektur">
-        Direktur & Managing Partner - Akbar F.A Salampessy
-      </button>
-    </h2>
-    <div id="collapseDirektur" class="accordion-collapse collapse" aria-labelledby="headingDirektur" data-bs-parent="#accordionJobdesk">
-      <div class="accordion-body">
-        <div class="row align-items-center">
-          <div class="col-md-8">
-            <ul>
-              <li>Menyusun visi, misi, arah strategis YLBH</li>
-              <li>Koordinasi program dan pengawasan semua divisi</li>
-              <li>Pengambilan keputusan hukum dan keuangan</li>
-              <li>Supervisi harian, SDM, inovasi digital, branding</li>
-              <li>Rekam jejak etika dan kepemimpinan moral</li>
-            </ul>
-          </div>
-          <div class="col-md-4 text-center">
-            <img src="aset/foto-akbarsalampessy.jpg" alt="Akbar F.A Salampessy" class="img-fluid rounded" style="max-width: 150px;" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- 3. Bendahara & Finance -->
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingBendahara">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBendahara" aria-expanded="false" aria-controls="collapseBendahara">
-        Bendahara & Finance - Alimin Maruapey / Iftyn Yuninda
-      </button>
-    </h2>
-    <div id="collapseBendahara" class="accordion-collapse collapse" aria-labelledby="headingBendahara" data-bs-parent="#accordionJobdesk">
-      <div class="accordion-body">
-        <div class="row align-items-center">
-          <div class="col-md-8">
-            <ul>
-              <li>Pengelolaan kas besar dan kecil</li>
-              <li>Pencatatan SP2D, honor, laporan keuangan bulanan</li>
-              <li>Audit internal dan pelaporan ke Direktur</li>
-              <li>Koordinasi dengan Posbakum, direktur, dan keuangan cabang</li>
-            </ul>
-          </div>
-          <div class="col-md-4 text-center">
-            <img src="aset/alimin.jpg" alt="Alimin Maruapey" class="img-fluid rounded" style="max-width: 150px;" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- 4. Humas & Publikasi -->
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingHumas">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHumas" aria-expanded="false" aria-controls="collapseHumas">
-        Humas & Publikasi - Zulkifli Rumkel
-      </button>
-    </h2>
-    <div id="collapseHumas" class="accordion-collapse collapse" aria-labelledby="headingHumas" data-bs-parent="#accordionJobdesk">
-      <div class="accordion-body">
-        <div class="row align-items-center">
-          <div class="col-md-8">
-            <ul>
-              <li>Mengelola media sosial dan siaran pers</li>
-              <li>Mengatur dokumentasi, laporan publik, dan event</li>
-              <li>Kolaborasi dengan branding untuk citra lembaga</li>
-              <li>Monitoring reputasi dan krisis komunikasi</li>
-            </ul>
-          </div>
-          <div class="col-md-4 text-center">
-            <img src="aset/foto-zulkifli.jpg" alt="Zulkifli Rumkel" class="img-fluid rounded" style="max-width: 150px;" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-          <!-- 5. Posbakum & Konsultasi Hukum -->
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingPosbakum">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePosbakum" aria-expanded="false" aria-controls="collapsePosbakum">
-        Posbakum & Konsultasi Hukum - Ayu Saadatuzahra
-      </button>
-    </h2>
-    <div id="collapsePosbakum" class="accordion-collapse collapse" aria-labelledby="headingPosbakum" data-bs-parent="#accordionJobdesk">
-      <div class="accordion-body">
-        <div class="row align-items-center">
-          <div class="col-md-8">
-            <ul>
-              <li>Pelayanan klien, konsultasi hukum dasar, pembuatan dokumen</li>
-              <li>Pelaporan Posbakum dan evaluasi tren kasus</li>
-              <li>Koordinasi lintas divisi dan integrasi digital</li>
-            </ul>
-          </div>
-          <div class="col-md-4 text-center">
-            <img src="aset/foto-ayu.jpg" alt="Ayu Saadatuzahra" class="img-fluid rounded" style="max-width: 150px;" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- 6. Advokasi & Litigasi -->
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingLitigasi">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLitigasi" aria-expanded="false" aria-controls="collapseLitigasi">
-        Advokasi & Litigasi - Rifhaldi Rahman / Iftyn Yuninda
-      </button>
-    </h2>
-    <div id="collapseLitigasi" class="accordion-collapse collapse" aria-labelledby="headingLitigasi" data-bs-parent="#accordionJobdesk">
-      <div class="accordion-body">
-        <div class="row align-items-center">
-          <div class="col-md-8">
-            <ul>
-              <li>Analisis perkara, pendampingan, dan sidang</li>
-              <li>Koordinasi dengan klien, pengadilan, dan direktur</li>
-              <li>Evaluasi dan pelaporan kasus litigasi</li>
-            </ul>
-          </div>
-          <div class="col-md-4 text-center">
-            <img src="aset/foto-rifhaldi.jpg" alt="Rifhaldi Rahman" class="img-fluid rounded" style="max-width: 150px;" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- 7. Riset & Kajian Hukum -->
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingRiset">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRiset" aria-expanded="false" aria-controls="collapseRiset">
-        Riset & Kajian Hukum - Iftyn Yuninda
-      </button>
-    </h2>
-    <div id="collapseRiset" class="accordion-collapse collapse" aria-labelledby="headingRiset" data-bs-parent="#accordionJobdesk">
-      <div class="accordion-body">
-        <div class="row align-items-center">
-          <div class="col-md-8">
-            <ul>
-              <li>Menyusun kajian, edukasi, konten hukum</li>
-              <li>Mengembangkan riset advokat dan jaringan komunitas</li>
-            </ul>
-          </div>
-          <div class="col-md-4 text-center">
-            <img src="aset/foto-iftyn.jpg" alt="Iftyn Yuninda" class="img-fluid rounded" style="max-width: 150px;" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- 8. Staf Legal -->
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingStafLegal">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseStafLegal" aria-expanded="false" aria-controls="collapseStafLegal">
-        Staf Legal - Wahyuni Boeng
-      </button>
-    </h2>
-    <div id="collapseStafLegal" class="accordion-collapse collapse" aria-labelledby="headingStafLegal" data-bs-parent="#accordionJobdesk">
-      <div class="accordion-body">
-        <div class="row align-items-center">
-          <div class="col-md-8">
-            <ul>
-              <li>Agenda kantor, administrasi, arsip, dan komunikasi internal</li>
-              <li>Persiapan sidang dan laporan kegiatan harian</li>
-            </ul>
-          </div>
-          <div class="col-md-4 text-center">
-            <img src="aset/foto-wahyuni.jpg" alt="Wahyuni Boeng" class="img-fluid rounded" style="max-width: 150px;" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- 9. Branding & Kreatif -->
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingBranding">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBranding" aria-expanded="false" aria-controls="collapseBranding">
-        Branding & Kreatif - Ainul Chasanah Tuanaya
-      </button>
-    </h2>
-    <div id="collapseBranding" class="accordion-collapse collapse" aria-labelledby="headingBranding" data-bs-parent="#accordionJobdesk">
-      <div class="accordion-body">
-        <div class="row align-items-center">
-          <div class="col-md-8">
-            <ul>
-              <li>Desain promosi, produk hukum digital, dan media sosial</li>
-              <li>Database klien, tata ruang kantor, dan kolaborasi konten</li>
-            </ul>
-          </div>
-          <div class="col-md-4 text-center">
-            <img src="aset/foto-ainul.jpg" alt="Ainul Chasanah Tuanaya" class="img-fluid rounded" style="max-width: 150px;" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- 10. Human Development Management -->
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingSDM">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSDM" aria-expanded="false" aria-controls="collapseSDM">
-        Human Development Management (SDM)
-      </button>
-    </h2>
-    <div id="collapseSDM" class="accordion-collapse collapse" aria-labelledby="headingSDM" data-bs-parent="#accordionJobdesk">
-      <div class="accordion-body">
-        <div class="row align-items-center">
-          <div class="col-md-8">
-            <ul>
-              <li>Rekrutmen, pelatihan, dan evaluasi staf</li>
-              <li>Manajemen karier, kesejahteraan, dan budaya organisasi</li>
-            </ul>
-          </div>
-          <div class="col-md-4 text-center">
-            <img src="aset/foto-sdm.jpg" alt="Human Development" class="img-fluid rounded" style="max-width: 150px;" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div>
-        
     </section>
-
+    <section class="container py-5">
+      <h2 class="text-center fw-bold mb-4">Struktur &amp; Jobdesk Pengurus</h2>
+      <div class="accordion" id="accordionJobdesk">
+        <!-- 1. Pembina -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingPembina">
+            <button
+              class="accordion-button collapsed"
+              data-bs-target="#collapsePembina"
+              data-bs-toggle="collapse"
+              type="button"
+            >
+              <i class="bi bi-person-lines-fill me-2 text-primary"></i>
+              Pembina - Malik Raudhi Tuasamu
+            </button>
+          </h2>
+          <div
+            aria-labelledby="headingPembina"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#accordionJobdesk"
+            id="collapsePembina"
+          >
+            <div class="accordion-body">
+              <div class="row align-items-center">
+                <div class="col-md-8">
+                  <ul>
+                    <li>Memberikan nasihat strategis pengembangan lembaga</li>
+                    <li>Menilai laporan kinerja dan arah organisasi</li>
+                    <li>Persetujuan kebijakan strategis</li>
+                    <li>Pengawasan kinerja, keuangan, dan etika organisasi</li>
+                    <li>
+                      Mewakili lembaga dalam forum kehormatan atau kebijakan
+                      tinggi
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4 text-center">
+                  <img
+                    alt="Malik Raudhi Tuasamu"
+                    class="img-fluid rounded"
+                    src="aset/foto-maliktuasamu.jpg"
+                    style="max-width: 150px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 2. Direktur & Managing Partner -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingDirektur">
+            <button
+              aria-controls="collapseDirektur"
+              aria-expanded="false"
+              class="accordion-button collapsed"
+              data-bs-target="#collapseDirektur"
+              data-bs-toggle="collapse"
+              type="button"
+            >
+              <i class="bi bi-person-lines-fill me-2 text-primary"></i>
+              Direktur &amp; Managing Partner - Akbar F.A Salampessy
+            </button>
+          </h2>
+          <div
+            aria-labelledby="headingDirektur"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionJobdesk"
+            id="collapseDirektur"
+          >
+            <div class="accordion-body">
+              <div class="row align-items-center">
+                <div class="col-md-8">
+                  <ul>
+                    <li>Menyusun visi, misi, arah strategis YLBH</li>
+                    <li>Koordinasi program dan pengawasan semua divisi</li>
+                    <li>Pengambilan keputusan hukum dan keuangan</li>
+                    <li>Supervisi harian, SDM, inovasi digital, branding</li>
+                    <li>Rekam jejak etika dan kepemimpinan moral</li>
+                  </ul>
+                </div>
+                <div class="col-md-4 text-center">
+                  <img
+                    alt="Akbar F.A Salampessy"
+                    class="img-fluid rounded"
+                    src="aset/foto-akbarsalampessy.jpg"
+                    style="max-width: 150px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 3. Bendahara & Finance -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingBendahara">
+            <button
+              aria-controls="collapseBendahara"
+              aria-expanded="false"
+              class="accordion-button collapsed"
+              data-bs-target="#collapseBendahara"
+              data-bs-toggle="collapse"
+              type="button"
+            >
+              <i class="bi bi-person-lines-fill me-2 text-primary"></i>
+              Bendahara &amp; Finance - Alimin Maruapey / Iftyn Yuninda
+            </button>
+          </h2>
+          <div
+            aria-labelledby="headingBendahara"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionJobdesk"
+            id="collapseBendahara"
+          >
+            <div class="accordion-body">
+              <div class="row align-items-center">
+                <div class="col-md-8">
+                  <ul>
+                    <li>Pengelolaan kas besar dan kecil</li>
+                    <li>Pencatatan SP2D, honor, laporan keuangan bulanan</li>
+                    <li>Audit internal dan pelaporan ke Direktur</li>
+                    <li>
+                      Koordinasi dengan Posbakum, direktur, dan keuangan cabang
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4 text-center">
+                  <img
+                    alt="Alimin Maruapey"
+                    class="img-fluid rounded"
+                    src="aset/alimin.jpg"
+                    style="max-width: 150px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 4. Humas & Publikasi -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingHumas">
+            <button
+              aria-controls="collapseHumas"
+              aria-expanded="false"
+              class="accordion-button collapsed"
+              data-bs-target="#collapseHumas"
+              data-bs-toggle="collapse"
+              type="button"
+            >
+              <i class="bi bi-person-lines-fill me-2 text-primary"></i>
+              Humas &amp; Publikasi - Zulkifli Rumkel
+            </button>
+          </h2>
+          <div
+            aria-labelledby="headingHumas"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionJobdesk"
+            id="collapseHumas"
+          >
+            <div class="accordion-body">
+              <div class="row align-items-center">
+                <div class="col-md-8">
+                  <ul>
+                    <li>Mengelola media sosial dan siaran pers</li>
+                    <li>Mengatur dokumentasi, laporan publik, dan event</li>
+                    <li>Kolaborasi dengan branding untuk citra lembaga</li>
+                    <li>Monitoring reputasi dan krisis komunikasi</li>
+                  </ul>
+                </div>
+                <div class="col-md-4 text-center">
+                  <img
+                    alt="Zulkifli Rumkel"
+                    class="img-fluid rounded"
+                    src="aset/foto-zulkifli.jpg"
+                    style="max-width: 150px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 5. Posbakum & Konsultasi Hukum -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingPosbakum">
+            <button
+              aria-controls="collapsePosbakum"
+              aria-expanded="false"
+              class="accordion-button collapsed"
+              data-bs-target="#collapsePosbakum"
+              data-bs-toggle="collapse"
+              type="button"
+            >
+              <i class="bi bi-person-lines-fill me-2 text-primary"></i>
+              Posbakum &amp; Konsultasi Hukum - Ayu Saadatuzahra
+            </button>
+          </h2>
+          <div
+            aria-labelledby="headingPosbakum"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionJobdesk"
+            id="collapsePosbakum"
+          >
+            <div class="accordion-body">
+              <div class="row align-items-center">
+                <div class="col-md-8">
+                  <ul>
+                    <li>
+                      Pelayanan klien, konsultasi hukum dasar, pembuatan dokumen
+                    </li>
+                    <li>Pelaporan Posbakum dan evaluasi tren kasus</li>
+                    <li>Koordinasi lintas divisi dan integrasi digital</li>
+                  </ul>
+                </div>
+                <div class="col-md-4 text-center">
+                  <img
+                    alt="Ayu Saadatuzahra"
+                    class="img-fluid rounded"
+                    src="aset/foto-ayu.jpg"
+                    style="max-width: 150px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 6. Advokasi & Litigasi -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingLitigasi">
+            <button
+              aria-controls="collapseLitigasi"
+              aria-expanded="false"
+              class="accordion-button collapsed"
+              data-bs-target="#collapseLitigasi"
+              data-bs-toggle="collapse"
+              type="button"
+            >
+              <i class="bi bi-person-lines-fill me-2 text-primary"></i>
+              Advokasi &amp; Litigasi - Rifhaldi Rahman / Iftyn Yuninda
+            </button>
+          </h2>
+          <div
+            aria-labelledby="headingLitigasi"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionJobdesk"
+            id="collapseLitigasi"
+          >
+            <div class="accordion-body">
+              <div class="row align-items-center">
+                <div class="col-md-8">
+                  <ul>
+                    <li>Analisis perkara, pendampingan, dan sidang</li>
+                    <li>Koordinasi dengan klien, pengadilan, dan direktur</li>
+                    <li>Evaluasi dan pelaporan kasus litigasi</li>
+                  </ul>
+                </div>
+                <div class="col-md-4 text-center">
+                  <img
+                    alt="Rifhaldi Rahman"
+                    class="img-fluid rounded"
+                    src="aset/foto-rifhaldi.jpg"
+                    style="max-width: 150px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 7. Riset & Kajian Hukum -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingRiset">
+            <button
+              aria-controls="collapseRiset"
+              aria-expanded="false"
+              class="accordion-button collapsed"
+              data-bs-target="#collapseRiset"
+              data-bs-toggle="collapse"
+              type="button"
+            >
+              <i class="bi bi-person-lines-fill me-2 text-primary"></i>
+              Riset &amp; Kajian Hukum - Iftyn Yuninda
+            </button>
+          </h2>
+          <div
+            aria-labelledby="headingRiset"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionJobdesk"
+            id="collapseRiset"
+          >
+            <div class="accordion-body">
+              <div class="row align-items-center">
+                <div class="col-md-8">
+                  <ul>
+                    <li>Menyusun kajian, edukasi, konten hukum</li>
+                    <li>Mengembangkan riset advokat dan jaringan komunitas</li>
+                  </ul>
+                </div>
+                <div class="col-md-4 text-center">
+                  <img
+                    alt="Iftyn Yuninda"
+                    class="img-fluid rounded"
+                    src="aset/foto-iftyn.jpg"
+                    style="max-width: 150px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 8. Staf Legal -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingStafLegal">
+            <button
+              aria-controls="collapseStafLegal"
+              aria-expanded="false"
+              class="accordion-button collapsed"
+              data-bs-target="#collapseStafLegal"
+              data-bs-toggle="collapse"
+              type="button"
+            >
+              <i class="bi bi-person-lines-fill me-2 text-primary"></i>
+              Staf Legal - Wahyuni Boeng
+            </button>
+          </h2>
+          <div
+            aria-labelledby="headingStafLegal"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionJobdesk"
+            id="collapseStafLegal"
+          >
+            <div class="accordion-body">
+              <div class="row align-items-center">
+                <div class="col-md-8">
+                  <ul>
+                    <li>
+                      Agenda kantor, administrasi, arsip, dan komunikasi
+                      internal
+                    </li>
+                    <li>Persiapan sidang dan laporan kegiatan harian</li>
+                  </ul>
+                </div>
+                <div class="col-md-4 text-center">
+                  <img
+                    alt="Wahyuni Boeng"
+                    class="img-fluid rounded"
+                    src="aset/foto-wahyuni.jpg"
+                    style="max-width: 150px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 9. Branding & Kreatif -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingBranding">
+            <button
+              aria-controls="collapseBranding"
+              aria-expanded="false"
+              class="accordion-button collapsed"
+              data-bs-target="#collapseBranding"
+              data-bs-toggle="collapse"
+              type="button"
+            >
+              <i class="bi bi-person-lines-fill me-2 text-primary"></i>
+              Branding &amp; Kreatif - Ainul Chasanah
+            </button>
+          </h2>
+          <div
+            aria-labelledby="headingBranding"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionJobdesk"
+            id="collapseBranding"
+          >
+            <div class="accordion-body">
+              <div class="row align-items-center">
+                <div class="col-md-8">
+                  <ul>
+                    <li>
+                      Desain promosi, produk hukum digital, dan media sosial
+                    </li>
+                    <li>
+                      Database klien, tata ruang kantor, dan kolaborasi konten
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4 text-center">
+                  <img
+                    alt="Ainul Chasanah Tuanaya"
+                    class="img-fluid rounded"
+                    src="aset/foto-ainul.jpg"
+                    style="max-width: 150px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 10. Human Development Management -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSDM">
+            <button
+              aria-controls="collapseSDM"
+              aria-expanded="false"
+              class="accordion-button collapsed"
+              data-bs-target="#collapseSDM"
+              data-bs-toggle="collapse"
+              type="button"
+            >
+              <i class="bi bi-person-lines-fill me-2 text-primary"></i>
+              Human Development Management (SDM)
+            </button>
+          </h2>
+          <div
+            aria-labelledby="headingSDM"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionJobdesk"
+            id="collapseSDM"
+          >
+            <div class="accordion-body">
+              <div class="row align-items-center">
+                <div class="col-md-8">
+                  <ul>
+                    <li>Rekrutmen, pelatihan, dan evaluasi staf</li>
+                    <li>
+                      Manajemen karier, kesejahteraan, dan budaya organisasi
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4 text-center">
+                  <img
+                    alt="Human Development"
+                    class="img-fluid rounded"
+                    src="aset/foto-sdm.jpg"
+                    style="max-width: 150px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer class="bg-dark text-white text-center py-3">
       <div class="container">
-        <small>© 2025 YLBH. All rights reserved.</small>
+        <small> © 2025 YLBH. All rights reserved. </small>
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

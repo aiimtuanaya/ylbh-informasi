@@ -1,16 +1,17 @@
 /* Typography & General */
+
 body {
   font-family: "Segoe UI", sans-serif;
   scroll-behavior: smooth;
-  background-color: #e0e0e0; /* Abu-abu sedikit lebih gelap */
-  color: #333; /* Warna teks */
+  background-color: #e0e0e0;
+  color: #333;
 }
 
 /* Navbar */
-.navbar {
-  background-color: #800000 !important; /* Maron */
-}
 
+.navbar {
+  background-color: #800000 !important;
+}
 .navbar .nav-link {
   transition: color 0.3s ease;
 }
@@ -26,25 +27,24 @@ body {
 }
 
 /* Section Scroll Offset */
+
 section {
   scroll-margin-top: 80px;
 }
 
 /* Header */
+
 header {
   background: linear-gradient(rgba(68, 65, 65, 0.199), rgba(128, 0, 0, 0.6)),
-              url("aset/logoylbh.png") center/contain no-repeat;
-  background-color: #1a1a1a; /* fallback biar gak kosong */
+    url("aset/logoylbh.png") center/contain no-repeat;
+  background-color: #1a1a1a;
   color: white;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-  padding: 6rem 1rem; /* Atur padding biar tinggi cukup */
+  padding: 6rem 1rem;
 }
-
 header h1 {
   animation: fadeDown 1s ease-in-out;
 }
-
-/* Animasi Header */
 @keyframes fadeDown {
   0% {
     opacity: 0;
@@ -57,6 +57,7 @@ header h1 {
 }
 
 /* Tombol Animasi */
+
 .btn-animated {
   transition: all 0.3s ease-in-out;
   transform-origin: center;
@@ -68,8 +69,9 @@ header h1 {
   border-color: #800000 !important;
 }
 
-/* Scroll Fade untuk animasi manual */
-.scroll-fade {
+/* Scroll Fade */
+
+/*.scroll-fade {
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.6s ease-out;
@@ -77,9 +79,10 @@ header h1 {
 .scroll-fade.show {
   opacity: 1;
   transform: translateY(0);
-}
+} */
 
-/* Kartu Layanan dan Tim */
+/* Kartu */
+
 .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -100,64 +103,54 @@ header h1 {
   width: 100%;
 }
 
-/* Efek Ikon Tombol Collapse */
+/* </--nonaktif sementara /> 
+
 .rotate-icon {
   transition: transform 0.3s ease;
 }
 button[aria-expanded="true"] .rotate-icon {
   transform: rotate(180deg);
-}
+} */
 
-/* Collapse transition */
 .collapse {
   transition: height 0.4s ease !important;
 }
-
-/* Responsif tambahan */
 img {
   max-width: 100%;
   height: auto;
 }
-
-/* Tombol Warna */
 .btn-primary {
   background-color: #800000;
   border-color: #800000;
 }
-
 .btn-primary:hover {
   background-color: #a52a2a;
   border-color: #a52a2a;
 }
-
 .btn-outline-primary {
   color: #800000;
   border-color: #800000;
 }
-
 .btn-outline-primary:hover {
   background-color: #800000;
   color: white;
 }
-
-/* Footer */
 footer {
   background-color: #800000;
   color: white;
+  padding: 1em;
+  text-align: center;
+  font-size: 0.9rem;
 }
-
-/* Utility */
 .text-center {
   text-align: center;
 }
-
 #portofolio {
   position: relative;
   z-index: 1;
   overflow: hidden;
+  background-color: #1a1a1a; /* Lebih gelap */
 }
-
-/* Background image */
 #portofolio::before {
   content: "";
   position: absolute;
@@ -165,16 +158,13 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  /* background-image: url('aset/YLBH.png');*/
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain; /* responsive size */
+  background-size: contain;
   opacity: 0.1; /* transparansi watermark */
   filter: blur(0.5px); /* efek blur halus */
   z-index: 0;
 }
-
-/* Dark overlay */
 #portofolio::after {
   content: "";
   position: absolute;
@@ -182,19 +172,16 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.096); /* overlay gelap */
+  background: rgba(0, 0, 0, 0.096); /* Sedikit lebih gelap */
   z-index: 0;
 }
-
-/* Konten di atas background */
 #portofolio .container {
   position: relative;
   z-index: 2;
-  color: white; /* teks jadi putih agar kontras */
+  color: white;
 }
-
 .portofolio-bg {
-  background: url('aset/fotopengacara.jpg') center center / contain no-repeat;
+  background: url("aset/fotopengacara.jpg") center center / contain no-repeat;
   background-color: #42282863; /* fallback */
   background-blend-mode: overlay;
   background-size: cover;
@@ -202,16 +189,8 @@ footer {
   background-position: center;
   position: relative;
 }
-
 .overlay-blur {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(3px);
-  background-color: rgba(0, 0, 0, 0.267);
-  z-index: 1;
+  display: none; /* Hilangkan layer blur */
 }
 
 /* Header di halaman portofolio */
@@ -227,7 +206,7 @@ main {
   padding: 2rem;
   margin: 2rem auto;
   border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   max-width: 900px;
   line-height: 1.8;
 }
@@ -267,7 +246,6 @@ footer {
 body.portofolio-page {
   background-color: #f2f2f2;
 }
-
 .btn-outline-dark {
   border: 2px solid #212529;
   color: #212529;
@@ -276,51 +254,127 @@ body.portofolio-page {
   font-weight: 500;
   border-radius: 0.3em;
 }
-
 .btn-outline-dark:hover {
   background-color: #212529;
   color: #fff;
 }
-
-@keyframes fadeInSpin { 0% { opacity: 0; transform: rotate(-20deg)
-  scale(0.8); } 100% { opacity: 1; transform: rotate(0deg) scale(1); } }
-  .logo-navbar { animation: fadeInSpin 1s ease-in-out; transition: transform
-  0.3s ease; } .logo-navbar:hover { transform: scale(1.1) rotate(5deg); }
+@keyframes fadeInSpin {
+  0% {
+    opacity: 0;
+    transform: rotate(-20deg) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+  }
+}
+.logo-navbar {
+  animation: fadeInSpin 1s ease-in-out;
+  transition: transform 0.3s ease;
+}
+.logo-navbar:hover {
+  transform: scale(1.1) rotate(5deg);
+}
 
 /* === Tambahan dari halaman tim === */
+
 .team-section {
-        padding: 60px 15px;
-        max-width: 1200px;
-        margin: auto;}
+  padding: 60px 15px;
+  max-width: 1200px;
+  margin: auto;
+}
 .team-title {
-        font-weight: 700;
-        font-size: 2.5rem;
-        margin-bottom: 2rem;
-        text-align: center;}
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
 .team-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 30px;}
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
 .member-card {
-        background: white;
-        border-radius: 12px;
-        overflow: hidden;
-        text-align: center;
-        transition: all 0.3s ease;
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);}
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
 .member-card:hover {
-        transform: translateY(-6px);
-        box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);}
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+}
 .member-photo {
-        width: 100%;
-        height: 280px;
-        object-fit: cover;}
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
 .member-info {
-        padding: 20px;}
+  padding: 20px;
+}
 .member-name {
-        font-size: 1.1rem;
-        font-weight: 600;
-        margin-bottom: 8px;}
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
 .member-role {
-        font-size: 0.95rem;
-        color: #666;}
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* ...semua CSS sebelumnya tetap... */
+
+@media (max-width: 576px) {
+  #portofolio .card {
+    margin-bottom: 1rem;
+  }
+  .portofolio-bg {
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+  #portofolio::before,
+  #portofolio::after {
+    background-size: cover;
+    background-position: center;
+  }
+  .overlay-blur {
+    display: none;
+  }
+}
+
+/* Tambahan untuk memastikan teks terbaca */
+
+#portofolio .card-body {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+/* style accordion tim */
+
+.accordion-button i.bi {
+  font-size: 1.2rem;
+  margin-right: 0.75rem;
+  color: #0d6efd;
+}
+.accordion-item:nth-child(even) .accordion-button {
+  background-color: #f8f9fa;
+}
+.accordion-item:nth-child(odd) .accordion-button {
+  background-color: #e9ecef;
+}
+.accordion-body {
+  animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

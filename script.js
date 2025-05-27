@@ -1,6 +1,9 @@
 // script.js
 
-// Fungsi untuk animasi scroll manual (untuk elemen dengan class .scroll-fade)
+// ===============================
+// Fungsi animasi scroll (Tidak digunakan saat ini)
+// ===============================
+/*
 document.addEventListener("DOMContentLoaded", function () {
   const scrollFadeElements = document.querySelectorAll(".scroll-fade");
 
@@ -17,11 +20,16 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", checkPosition);
   checkPosition(); // Jalankan saat halaman dimuat
 });
+*/
 
-// Fungsi untuk mengganti teks tombol collapse
+// ===============================
+// Fungsi tombol collapse (Tidak digunakan saat ini)
+// ===============================
+/*
 document.querySelectorAll(".toggle-profil").forEach((button) => {
   const label = button.querySelector(".label-text");
-  const icon = button.querySelector(".rotate-icon");
+  // const icon = button.querySelector(".rotate-icon"); // Tidak digunakan
+
   const targetId = button.getAttribute("data-bs-target");
   const targetElement = document.querySelector(targetId);
 
@@ -36,13 +44,4 @@ document.querySelectorAll(".toggle-profil").forEach((button) => {
     });
   }
 });
-
-<script>
-  const carousel = document.querySelector('#carouselPortofolio');
-  const bsCarousel = new bootstrap.Carousel(carousel, {
-    interval: 4000,
-    ride: 'carousel',
-    pause: false,
-    wrap: true
-  });
-</script>
+*/
