@@ -169,8 +169,8 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain; /* responsive size */
-  opacity: 1.3; /* transparansi watermark */
-  filter: blur(1.5px); /* efek blur halus */
+  opacity: 0.1; /* transparansi watermark */
+  filter: blur(0.5px); /* efek blur halus */
   z-index: 0;
 }
 
@@ -182,7 +182,7 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.253); /* overlay gelap */
+  background: rgba(0, 0, 0, 0.096); /* overlay gelap */
   z-index: 0;
 }
 
@@ -197,7 +197,7 @@ footer {
   background: url('aset/fotopengacara.jpg') center center / contain no-repeat;
   background-color: #42282863; /* fallback */
   background-blend-mode: overlay;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
@@ -210,7 +210,7 @@ footer {
   width: 100%;
   height: 100%;
   backdrop-filter: blur(3px);
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.267);
   z-index: 1;
 }
 
