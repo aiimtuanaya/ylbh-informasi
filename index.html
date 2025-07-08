@@ -466,6 +466,16 @@
           },
         },
       });
+
+      // Tambahan: Pause/resume Swiper saat collapse dibuka/ditutup
+      document.querySelectorAll('.collapse').forEach(function (el) {
+        el.addEventListener('show.bs.collapse', function () {
+          swiper.autoplay.stop();
+        });
+        el.addEventListener('hide.bs.collapse', function () {
+          swiper.autoplay.start();
+        });
+      });
     </script>
 
     <!-- Layanan -->
