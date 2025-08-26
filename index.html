@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-
 <html lang="id">
-<!-- Head section updated with Swiper CSS -->
 
 <head>
-  <link rel="icon" type="image/png" href="aset/favicon.png" />
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <title>Beranda - YLBH BAKTI UNTUK NEGERI</title>
+  <link rel="icon" type="image/png" href="aset/favicon.png" />
 
   <!-- Bootstrap CSS & Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
   <!-- Custom CSS -->
   <link href="style.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
   <style>
     .swiper-pagination {
       margin-top: 3rem;
@@ -49,385 +50,84 @@
         <img alt="Logo YLBH" class="me-2 logo-navbar" height="30" src="aset/logoylbh.png" width="30" />
         YLBH BAKTI UNTUK NEGERI
       </a>
-      <button class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#profil">Profil</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="tim.html">Tim Kami</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="#index.html">Profil</a></li>
+          <li class="nav-item"><a class="nav-link" href="tim.html">Tim Kami</a></li>
           <li class="nav-item dropdown me-2">
             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="layananDropdown"
               role="button">Layanan</a>
             <ul class="dropdown-menu dropdown-menu-dark shadow">
-              <li>
-                <a class="dropdown-item" href="pidana.html">Hukum Pidana</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="perdata.html">Hukum Perdata</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="bisnis.html">Konsultasi Bisnis</a>
-              </li>
+              <li><a class="dropdown-item" href="pidana.html">Hukum Pidana</a></li>
+              <li><a class="dropdown-item" href="perdata.html">Hukum Perdata</a></li>
+              <li><a class="dropdown-item" href="bisnis.html">Konsultasi Bisnis</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portofolio">Portofolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#kontak">Hubungi Kami</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="#portofolio">Portofolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Hubungi Kami</a></li>
         </ul>
       </div>
     </div>
   </nav>
+
   <main>
     <!-- Header -->
     <header class="text-center py-5">
       <div class="container" style="max-width: 960px">
         <h1 class="display-4 fw-bold">Solusi Hukum Profesional</h1>
-        <p class="lead">
-          Melayani dengan Integritas, Komitmen, dan Kompetensi
-        </p>
+        <p class="lead">Melayani dengan Integritas, Komitmen, dan Kompetensi</p>
       </div>
     </header>
+
     <!-- Profil -->
-    <section class="py-5 bg-light" id="profil">
+    <section class="py-5 bg-light" id="profil" aria-labelledby="judul-profil">
       <div class="container" style="max-width: 960px">
-        <h2 class="fw-bold text-center mb-4">Profil</h2>
+        <h2 id="judul-profil" class="fw-bold text-center mb-4">Tentang Kami</h2>
         <p class="text-center">
-          YLBH adalah lembaga bantuan hukum yang berdedikasi memberikan
-          layanan hukum kepada masyarakat umum dengan pendekatan profesional
-          dan etis.
+          YLBH adalah lembaga bantuan hukum yang berdedikasi memberikan layanan hukum kepada masyarakat umum dengan
+          pendekatan profesional dan etis.
         </p>
       </div>
     </section>
 
-    <!-- Updated Swiper slides section with unique IDs and new profiles -->
-    <div class="swiper mySwiper">
-      <h2 class="fw-bold text-center mb-4">Tim Kami</h2>
-      <div class="swiper-wrapper">
-        <!-- Slide 1 -->
-        <div class="swiper-slide">
-          <div class="card h-100 text-center">
-            <img src="aset/rahmatsandi.webp" class="card-img-top" alt="Rahmat Sandi Tatisina" loading="lazy" />
-            <div class="card-body">
-              <h5 class="card-title">Adv. Rahmat Sandi Tatisina, S.H</h5>
-              <p class="card-text">
-                Koordinator YLBH BUN kantor Cabang Seram Bagian Barat.
-              </p>
-              <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="collapse"
-                data-bs-target="#profilRahmat" aria-expanded="false" aria-controls="profilRahmat">
-                Lihat Profil Lengkap
-              </button>
-              <div class="collapse mt-2" id="profilRahmat">
-                <p class="card-text">
-                  John telah menangani lebih dari 250 kasus pidana berat dan
-                  dikenal karena keahliannya dalam strategi litigasi tingkat
-                  tinggi. Ia juga aktif dalam seminar nasional sebagai
-                  pembicara di bidang hukum pidana.
-                </p>
-              </div>
+    <!-- Galeri Swiper -->
+    <section class="py-5" aria-labelledby="judul-galeri">
+      <div class="container" style="max-width: 960px">
+        <h2 id="judul-galeri" class="fw-bold text-center mb-4">Galeri YLBH</h2>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card"><img src="aset/gedung1.jpeg" class="card-img-top" alt="Gedung YLBH Tampak Depan"
+                  loading="lazy" /></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card"><img src="aset/gedung2.jpeg" class="card-img-top" alt="Gedung YLBH Sudut Kanan"
+                  loading="lazy" /></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card"><img src="aset/gedung3.jpeg" class="card-img-top" alt="Gedung YLBH Sudut Kiri"
+                  loading="lazy" /></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card"><img src="aset/gedung4.jpeg" class="card-img-top" alt="Ruang Kantor YLBH"
+                  loading="lazy" /></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card"><img src="aset/gedung5.jpeg" class="card-img-top" alt="Fasilitas Gedung YLBH"
+                  loading="lazy" /></div>
             </div>
           </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
-
-        <!-- Slide 2 -->
-        <div class="swiper-slide">
-          <div class="card h-100 text-center">
-            <img src="aset/akbar.webp" class="card-img-top" alt="Akbar F.A Salampessay" loading="lazy" />
-            <div class="card-body">
-              <h5 class="card-title">Adv. Akbar F.A Salampessy</h5>
-              <p class="card-text">
-                Penggerak literasi hukum.
-              </p>
-              <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="collapse"
-                data-bs-target="#profilAkbar" aria-expanded="false" aria-controls="profilAkbar">
-                Lihat Profil Lengkap
-              </button>
-              <div class="collapse mt-2" id="profilAkbar">
-                <p class="card-text">
-                  Akbar F.A. Salampessy adalah seorang advokat profesional yang telah meniti karier selama lebih dari
-                  sembilan tahun dengan reputasi sebagai sosok yang tegas, berintegritas, dan memiliki ketajaman visi
-                  hukum yang berpijak pada keadilan substantif. Empat tahun pengabdiannya di Jakarta bersama beberapa
-                  firma hukum bereputasi tinggi telah membentuk fondasi praktik hukumnya yang kokoh dan *mendalam*. Lima
-                  tahun terakhir, ia mengabdikan keahliannya di Maluku, membangun akses hukum yang lebih berkeadilan dan
-                  dekat dengan masyarakat.
-
-                  Ruang lingkup keahlian Akbar mencakup perkara perdata seperti wanprestasi, sengketa lahan,
-                  hutang-piutang, subrogasi dan cessie, tukar guling rumah, asuransi, serta sengketa bisnis dan
-                  ketenagakerjaan. Ia juga menguasai hukum tata usaha negara dan hukum keluarga. Dengan pendekatan yang
-                  strategis dan humanis, Akbar tak hanya andal dalam litigasi, tetapi juga dalam pencegahan risiko hukum
-                  melalui uji kelayakan hukum perusahaan, penagihan piutang yang sah dan terukur, serta penyusunan
-                  dokumen perjanjian dan kontrak secara profesional.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="swiper-slide">
-          <div class="card h-100 text-center">
-            <img src="aset/raismahu.webp" class="card-img-top" alt="Rais Mahu, SH" loading="lazy" />
-            <div class="card-body">
-              <h5 class="card-title">Rais Mahu, SH</h5>
-              <p class="card-text">
-                Paralegal & Direktur Seram Post
-              </p>
-              <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="collapse"
-                data-bs-target="#profilRais" aria-expanded="false" aria-controls="profilRais">
-                Lihat Profil Lengkap
-              </button>
-              <div class="collapse mt-2" id="profilRais">
-                <p class="card-text">
-                  S1: Sarjana Hukum Universitas Pattimura<br>
-                  Pengalaman sebagai paralegal dan direktur media Seram Post.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 4 -->
-        <div class="swiper-slide">
-          <div class="card h-100 text-center">
-            <img src="aset/abdulmajid.webp" class="card-img-top" alt="S. Abdul Madjid Kabalmay, SH.MH."
-              loading="lazy" />
-            <div class="card-body">
-              <h5 class="card-title">Adv. S. Abdul Madjid Kabalmay, SH.MH.</h5>
-              <p class="card-text">
-                Kosong.
-              </p>
-              <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="collapse"
-                data-bs-target="#profilAbdulMajid" aria-expanded="false" aria-controls="profilAbdulMajid">
-                Lihat Profil Lengkap
-              </button>
-              <div class="collapse mt-2" id="profilAbdulMajid">
-                <p class="card-text">
-                  Kosong.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 5 -->
-        <div class="swiper-slide">
-          <div class="card h-100 text-center">
-            <img src="aset/ayu.webp" class="card-img-top" alt="Adv. Ayu Saadatuzahrah" loading="lazy" />
-            <div class="card-body">
-              <h5 class="card-title">Adv. Ayu Saadatuzahrah</h5>
-              <p class="card-text">
-                S1 Hukum Universitas Islam Indonesia
-              </p>
-              <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="collapse"
-                data-bs-target="#profilAyu" aria-expanded="false" aria-controls="profilAyu">
-                Lihat Profil Lengkap
-              </button>
-              <div class="collapse mt-2" id="profilAyu">
-                <p class="card-text mb-1">
-                  <strong>Pengalaman dan keahlian dalam penanganan perkara:</strong>
-                </p>
-                <strong>Perdata Islam:</strong>
-                <ol class="mb-1" style="text-align:left;">
-                  <li>Perkawinan</li>
-                  <li>Waris</li>
-                </ol>
-                <strong>Perdata Umum:</strong>
-                <ol style="text-align:left;">
-                  <li>PMH</li>
-                  <li>Wanprestasi</li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Slide 6 -->
-        <div class="swiper-slide">
-          <div class="card h-100 text-center">
-            <img src="aset/alimin.webp" class="card-img-top" alt="Adv. Alimin Maruapey" loading="lazy" />
-            <div class="card-body">
-              <h5 class="card-title">Adv. Alimin Maruapey, SH</h5>
-              <p class="card-text">Bendahara umum YLBH.</p>
-              <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="collapse"
-                data-bs-target="#profilAlimin" aria-expanded="false" aria-controls="profilAlimin">
-                Lihat Profil Lengkap
-              </button>
-              <div class="collapse mt-2" id="profilAlimin">
-                <p class="card-text">
-                  Rizal mendampingi perusahaan dalam negosiasi kontrak, due
-                  diligence, dan proses merger-akuisisi. Ia memiliki jaringan
-                  luas di kalangan pebisnis dan regulator di tingkat nasional.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 7 -->
-        <div class="swiper-slide">
-          <div class="card h-100 text-center">
-            <img src="aset/wahyuni.webp" class="card-img-top" alt="Wahyuni Boeng" loading="lazy" />
-            <div class="card-body">
-              <h5 class="card-title">Wahyuni Boeng S.H</h5>
-              <p class="card-text">
-                Pengurus Bagian Staf Legal
-              </p>
-              <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="collapse"
-                data-bs-target="#profilWahyuni" aria-expanded="false" aria-controls="profilWahyuni">
-                Lihat Profil Lengkap
-              </button>
-              <div class="collapse mt-2" id="profilWahyuni">
-                <p class="card-text">
-                  S1 : Sarjana Hukum Universitas Pattimura
-                  Calon Magister Hukum Universitas Pattimura
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 8 -->
-        <div class="swiper-slide">
-          <div class="card h-100 text-center">
-            <img src="aset/iftin.webp" class="card-img-top" alt="Iftin Yuninda Hart, SH" loading="lazy" />
-            <div class="card-body">
-              <h5 class="card-title">Iftin Yuninda Hart, SH</h5>
-              <p class="card-text">
-                Pengurus Divisi Advokasi, Litigasi, Riset, dan Kajian Hukum.
-              </p>
-              <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="collapse"
-                data-bs-target="#profilIftin" aria-expanded="false" aria-controls="profilIftin">
-                Lihat Profil Lengkap
-              </button>
-              <div class="collapse mt-2" id="profilIftin">
-                <p class="card-text">
-                  S1: Sarjana Hukum di Universitas Pattimura
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 9 -->
-        <div class="swiper-slide">
-          <div class="card h-100 text-center">
-            <img src="aset/rifaldi.webp" class="card-img-top" alt="Adv. Rifhaldi Rahman, SH" loading="lazy" />
-            <div class="card-body">
-              <h5 class="card-title">Adv. Rifhaldi Rahman, SH</h5>
-              <p class="card-text">
-                Pengurus Divisi Advokasi, Litigasi, Riset, dan Kajian Hukum.
-              </p>
-              <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="collapse"
-                data-bs-target="#profilRifhaldi" aria-expanded="false" aria-controls="profilRifhaldi">
-                Lihat Profil Lengkap
-              </button>
-              <div class="collapse mt-2" id="profilRifhaldi">
-                <p class="card-text">
-                  S1: Universitas Darussalam
-                  S2: Sarjana Hukum di Universitas Pattimura
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 10 -->
-        <div class="swiper-slide">
-          <div class="card h-100 text-center">
-            <img src="aset/ainun.webp" class="card-img-top" alt="Ainul Chasanah" loading="lazy" />
-            <div class="card-body">
-              <h5 class="card-title">Adv. Ainul Chasanah, SH., MH.</h5>
-              <p class="card-text">
-                Pengurus Divisi Branding dan Kreatif
-              </p>
-              <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="collapse"
-                data-bs-target="#profilAinul" aria-expanded="false" aria-controls="profilAinul">
-                Lihat Profil Lengkap
-              </button>
-              <div class="collapse mt-2" id="profilAinul">
-                <p class="card-text">
-                  S1: Sarjana Hukum Tata Negara UIN Maulana Malik Ibrahim Malang
-                  S2: Sarjana Ilmu Hukum Universitas Widyagama Malang
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 11 -->
-        <div class="swiper-slide">
-          <div class="card h-100 text-center">
-            <img src="aset/malik.webp" class="card-img-top" alt="Malik Raudhi Tuasamu" loading="lazy" />
-            <div class="card-body">
-              <h5 class="card-title">Adv. Malik Raudhi Tuasamu, SH. I., CPM., CPL</h5>
-              <p class="card-text">
-                - Ketua Pembina YLBH Bakti Untuk Negeri
-                - Ketua DPW APSI Maluku
-              </p>
-              <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="collapse"
-                data-bs-target="#profilMalik" aria-expanded="false" aria-controls="profilMalik">
-                Lihat Profil Lengkap
-              </button>
-              <div class="collapse mt-2" id="profilMalik">
-                <p class="card-text">
-                  Pengalaman dan Keahlian dalam Penanganan Perkara.
-                  1. Perdata Islam
-                  - Waris
-                  - Perkawinan
-                  - Perceraian
-                  - Ekonomi Syaria'ah
-                  2. Perdata Umum
-                  - Perbuatan Melawan Hukum (PMH)
-                  - Wanprestasi
-                  - Perselisihan Hubungan Industrian
-                  3. Perdata PTUN
-                  - Gugatan Pembatalan Keputusan Tata Usaha Negara
-                  4. Mahkamah Konstitusi
-                  - Perselisihan Hasil Pemilihan Umum
-                  - Perselisihan Hasil Pemilihan Kepala Daerah
-                  5. Pengacara Pengadaan Barang dan Jasa
-                  6. Mediator Bersertifikasi oleh Mahkamah Agung.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 12 -->
-        <div class="swiper-slide">
-          <div class="card h-100 text-center">
-            <img src="aset/fatima.webp" class="card-img-top" alt="Adv. Fatima Izayani Tuanaya" loading="lazy" />
-            <div class="card-body">
-              <h5 class="card-title">Adv. Fatima Izayani Tuanaya S.H</h5>
-              <p class="card-text">
-                Legal officer staff di YLBH Bakti Untuk Negeri cabang Masohi
-                Paralegal
-              </p>
-              <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="collapse"
-                data-bs-target="#profilFatima" aria-expanded="false" aria-controls="profilFatima">
-                Lihat Profil Lengkap
-              </button>
-              <div class="collapse mt-2" id="profilFatima">
-                <p class="card-text">
-                  S1: Sarjana Hukum Tata Negara UIN Maulana Malik Ibrahim Malang
-                  S2: Sarjana Ilmu Hukum Universitas Widyagama Malang
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
-    </div>
+    </section>
+
 
     <!-- Swiper JS Initialization -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

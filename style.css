@@ -97,7 +97,22 @@ header h1 {
 .card:hover .btn {
   opacity: 1;
 }
-.card img {
+.mySwiper .card img {
+  object-fit: cover;
+  height: 350px;  /* lebih besar dari default 200px */
+  width: 100%;
+}
+#judul-galeri {
+  font-size: 1.75rem; /* default h2 bootstrap = 2rem */
+}
+
+@media (min-width: 768px) {
+  #judul-galeri {
+    font-size: 2rem; /* sedikit lebih besar di layar lebar */
+  }
+}
+
+/*.card img {
   object-fit: cover;
   height: 200px;
   width: 100%;
